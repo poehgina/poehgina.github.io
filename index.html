@@ -15,7 +15,7 @@
          font-family:"futura-pt", "Futura PT", "Jost", Futura, "Century Gothic", sans-serif;
          font-size:15px; line-height:1.45; letter-spacing:0.01em; font-weight:400; }
   .wrap { max-width:920px; margin:0 auto; padding:80px 24px 120px; }
-  .photo { display:block; width:100%; max-width:360px; height:auto; margin:0 auto 40px; }
+  .photo { display:block; width:240px; height:240px; border-radius:50%; object-fit:cover; margin:0 auto 40px; }
   .name { font-size:1rem; font-weight:500; letter-spacing:0.03em; text-transform:uppercase; margin:0 0 12px; }
   p { margin:0 0 14px; }
   a { color:inherit; text-decoration:none; border-bottom:1px solid var(--line); }
@@ -40,14 +40,14 @@
   .entry .d { display:block; padding-left:40px; }
   .note { font-style:italic; margin-top:8px; }
   .contact h3 { margin-top:14px; }
-  @media (max-width:600px){ .wrap{padding-top:48px} .photo{max-width:280px} .entry .d{padding-left:20px} }
+  @media (max-width:600px){ .wrap{padding-top:48px} .photo{width:200px; height:200px} .entry .d{padding-left:20px} }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- Photo: photo.jpeg (square, shown uncropped). Without it, this line disappears. -->
-  <img class="photo" src="photo.jpeg" alt="Gina Pöhlmann" onerror="this.remove()">
+  <!-- Photo: photo-round.jpg (face-centred crop of photo.jpeg, shown as a circle). Without it, this line disappears. -->
+  <img class="photo" src="photo-round.jpg" alt="Gina Pöhlmann" onerror="this.remove()">
 
   <p class="name">Gina Pöhlmann</p>
   <p>I am a technology governance and policy researcher studying whose perspectives shape decisions about AI and quantum technologies, and how the people affected by them can be involved earlier. Currently, I am a PhD candidate at the <a href="https://www.unisg.ch/en/">University of St. Gallen</a>, where I work in the EU-funded <a href="https://chanse.org/qshift/">Q-Shift</a> consortium, and a Recognized Academic Visitor at the Responsible Innovation Institute, <a href="https://www.cs.ox.ac.uk/">University of Oxford</a>. I expect to complete my PhD in early 2027.</p>
