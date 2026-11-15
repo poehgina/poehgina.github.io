@@ -15,7 +15,7 @@
          font-family:"Futura PT", Futura, "Jost", "Century Gothic", sans-serif;
          font-size:19px; line-height:1.75; letter-spacing:0.01em; }
   .wrap { max-width:960px; margin:0 auto; padding:48px 28px 120px; }
-  .photo { display:block; width:100%; max-width:720px; margin:0 auto 36px; }
+  .photo { display:block; width:100%; max-width:600px; aspect-ratio:3/2; object-fit:cover; object-position:center 10%; margin:0 auto 36px; }
   .name { font-size:1rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 16px; }
   p { margin:0 0 18px; }
   a { color:inherit; text-decoration:none; border-bottom:1px solid var(--line); }
@@ -46,7 +46,7 @@
 <body>
 <div class="wrap">
 
-  <!-- Photo: upload a file named photo.jpg. Without it, this line disappears. -->
+  <!-- Photo: photo.jpeg (square source, shown as a 3:2 crop). Without it, this line disappears. -->
   <img class="photo" src="photo.jpeg" alt="Gina Pöhlmann" onerror="this.remove()">
 
   <p class="name">Gina Pöhlmann</p>
